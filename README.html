@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Help Links</title><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: #0f2027;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      margin: 60px 20px 40px;
+      color: #ffffff;
+      animation: slideFade 1.3s ease-out forwards;
+    }
+
+    @keyframes slideFade {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .subject, .social {
+      text-align: center;
+      margin-bottom: 25px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    button {
+      background: linear-gradient(135deg, #6dd5fa, #2980b9);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1.1em;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease, background 0.3s ease;
+      margin: 10px;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #57c4f4, #21618c);
+    }
+
+    .bio-text {
+      max-width: 600px;
+      margin: 30px auto;
+      font-size: 1.1em;
+      color: #ddd;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+        margin: 30px 10px 20px;
+      }
+
+      button {
+        width: 90%;
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <h1>ཀུ་ཛུ་བཟང་པོ།!</h1>
+<h1>Subject tools!</h1>
+  <div class="subject">
+    <button onclick="window.open('https://quillbot.com/grammar-check', '_blank')">English</button>
+    <button onclick="window.open('https://math-gpt.org', '_blank')">Mathematics</button>
+    <button onclick="window.open('https://math-gpt.org', '_blank')">Physics</button>
+    <button onclick="window.open('https://math-gpt.org', '_blank')">Chemistry</button>
+    <button onclick="window.open('https://iask.ai', '_blank')">Biology</button>
+    <button onclick="window.open('https://poe.com', '_blank')">History</button>
+    <button onclick="window.open('https://poe.com', '_blank')">Geography</button>
+    <button onclick="window.open('https://math-gpt.org', '_blank')">Accountancy</button>
+    <button onclick="window.open('https://chatgpt.com/g/g-6nqZ9zi8T-entrepreneur-ai', '_blank')">Business & Entrepreneurship</button>
+    <button onclick="window.open('https://chrunos.com/ai-chatbot/?session=d16f7572-7c06-4e07-bfca-0e3d9e42c771', '_blank')">Economics</button>
+  <h1>Special tools!</h1>
+    <button onclick="window.open('https://www.zerogpt.com/')">AI Check</button>
+    <button onclick="window.open('https://www.humanizeai.pro/')">Humanize</button>
+    <button onclick="window.open('https://rec.gov.bt/textbooks-and-manuals/')">Textbooks</button>
+  </div>
+
+  <h1>Feedback?</h1>
+
+  <div class="social">
+    <button onclick="window.open('https://linktr.ee/uzzall_sfx')">My Social & Feedback</button>
+  </div>
+
+  <!-- particles.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle"
+        },
+        "opacity": {
+          "value": 0.5
+        },
+        "size": {
+          "value": 3
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 4
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+  </html>
